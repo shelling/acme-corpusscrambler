@@ -11,11 +11,11 @@ Acme::CorpusScrambler - An Acme way doing Lorem Ipsum.
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -34,8 +34,7 @@ Object constructor, no parameters required.
 
 sub new {
     my $class = shift;
-    my $self = {};
-    bless $self, $class;
+    bless {}, $class;
 }
 
 =head2 feed( $keyword => $corpus )
@@ -69,7 +68,7 @@ sub scramble {
     if (@keyword) {
         my $newcorpus = join("\n\n", @corpushash{ grep { exists $corpushash{$_} } @keyword });
         if ($newcorpus) {
-            $g->add_source($newcorpus);
+            # $g->add_source($newcorpus);
             return $g->generate;
         }
         return ""
