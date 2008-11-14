@@ -1,14 +1,12 @@
 use strict;
 use warnings;
-use inc::Module::Install;
-
-license 'perl';
+use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'Acme::CorpusScrambler',
-    AUTHOR              => 'Kang-min Liu, <gugod@gugod.org>',
     VERSION_FROM        => 'lib/Acme/CorpusScrambler.pm',
     ABSTRACT_FROM       => 'lib/Acme/CorpusScrambler.pm',
+    AUTHOR              => 'shelling, <navyblueshellingford@gmail.com>',
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' => 0,

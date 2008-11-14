@@ -2,11 +2,6 @@ Changes
 Makefile.PL
 MANIFEST
 README
-inc/Module/Install.pm
-inc/Module/Install/Base.pm
-inc/Module/Install/Makefile.pm
-inc/Module/Install/MakeMaker.pm
-inc/Module/Install/Metadata.pm
 lib/Acme/CorpusScrambler.pm
 t/00-load.t
 t/01-simple.t
