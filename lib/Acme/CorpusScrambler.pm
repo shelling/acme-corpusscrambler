@@ -48,6 +48,7 @@ my %corpushash;
 sub feed {
     my ($self, $keyword, $corpus) = @_;
     $corpushash{"$keyword"}="$corpus";
+    $self;
 }
 
 =head2 scramble( @keyword )
