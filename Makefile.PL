@@ -10,7 +10,7 @@ WriteMakefile(
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' => 0,
-        'Text::Greeking::zh_TW' => '0.0.3',
+        'Text::Greeking::zh_TW' => '0.0.4',
         'IO::All' => 0
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },

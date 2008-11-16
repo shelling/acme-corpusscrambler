@@ -11,11 +11,11 @@ Acme::CorpusScrambler - An Acme way doing Lorem Ipsum.
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 SYNOPSIS
 
@@ -68,7 +68,7 @@ sub scramble {
     if (@keyword) {
         my $newcorpus = join("\n\n", @corpushash{ grep { exists $corpushash{$_} } @keyword });
         if ($newcorpus) {
-            # $g->add_source($newcorpus);
+            $g->add_source($newcorpus);
             return $g->generate;
         }
         return ""
@@ -85,11 +85,7 @@ shelling <navyblueshellingford at gmail.com>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to
-C<bug-acme-scrambledcorpus at rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme-CorpusScrambler>.
-I will be notified, and then you'll automatically be notified of progress on
-your bug as I make changes.
+Please report any bugs or feature requests to C<shelling at cpan.org> or C<gugod at gugod.org>
 
 =head1 SUPPORT
 
@@ -121,7 +117,7 @@ L<http://search.cpan.org/dist/Acme-CorpusScrambler>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Kang-min Liu, shelling, all rights reserved.
+Copyright @ 2007-2008 Kang-min Liu, shelling, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
