@@ -118,7 +118,7 @@ L<http://search.cpan.org/dist/Acme-CorpusScrambler>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright @ 2007-2008 Kang-min Liu, shelling, all rights reserved.
+Copyright © 2007-2008 Kang-min Liu, shelling, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
